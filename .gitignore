@@ -43,6 +43,36 @@ app.*.map.json
 /android/app/profile
 /android/app/release
 
+# Flutter VS Code Related
+.classpath
+.project
+.settings/
+.vscode/
+
+# Flutter Android Related
+**/android/**/gradle-wrapper.jar
+.gradle/
+**/android/captures/
+**/android/gradlew.bat
+**/android/gradlew
+**/android/local.properties
+**/android/key.properties
+*.jks
+
+# Flutter IOS Related
+**/ios/Flutter/.last_build_id
+**/ios/Flutter/ephemeral
+**/ios/Flutter/app.flx
+**/ios/Flutter/app.zip
+**/ios/Flutter/flutter_assets/
+**/ios/**/*.pbxuser
+**/ios/**/*.perspectivev3
+**/ios/**/*sync/
+**/ios/Flutter/App.framework
+**/ios/Flutter/Flutter.framework
+**/ios/Flutter/Flutter.podspec
+**/ios/Flutter/Generated.xcconfig
+
 linux/
 ios/
 macos/
