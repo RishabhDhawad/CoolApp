@@ -1,5 +1,6 @@
 # Miscellaneous
 *.class
+*.lock
 *.log
 *.pyc
 *.swp
@@ -8,7 +9,6 @@
 .buildlog/
 .history
 .svn/
-migrate_working_dir/
 
 # IntelliJ related
 *.iml
@@ -32,6 +32,9 @@ migrate_working_dir/
 .pub/
 /build/
 
+# packages file containing multi-root paths
+.packages.generated
+
 # Symbolication related
 app.*.symbols
 
@@ -47,15 +50,16 @@ app.*.map.json
 .classpath
 .project
 .settings/
-.vscode/
+.vscode/*
 
 # Flutter Android Related
 **/android/**/gradle-wrapper.jar
 .gradle/
 **/android/captures/
-**/android/gradlew.bat
 **/android/gradlew
+**/android/gradlew.bat
 **/android/local.properties
+**/android/**/GeneratedPluginRegistrant.java
 **/android/key.properties
 *.jks
 
@@ -79,6 +83,26 @@ android/.externalNativeBuild/
 android/.gradle/
 android/CMakeLists.txt
 android/app/.externalNativeBuild/
+
+# macOS
+**/Flutter/ephemeral/
+**/Pods/
+**/macos/Flutter/GeneratedPluginRegistrant.swift
+**/macos/Flutter/ephemeral
+**/xcuserdata/
+
+# Windows
+**/windows/flutter/generated_plugin_registrant.cc
+**/windows/flutter/generated_plugin_registrant.h
+**/windows/flutter/generated_plugins.cmake
+
+# Linux
+**/linux/flutter/generated_plugin_registrant.cc
+**/linux/flutter/generated_plugin_registrant.h
+**/linux/flutter/generated_plugins.cmake
+
+# Coverage
+coverage/
 
 linux/
 ios/
