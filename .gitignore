@@ -73,6 +73,13 @@ app.*.map.json
 **/ios/Flutter/Flutter.podspec
 **/ios/Flutter/Generated.xcconfig
 
+# Ignore CMake files and build directory
+android/.cxx/
+android/.externalNativeBuild/
+android/.gradle/
+android/CMakeLists.txt
+android/app/.externalNativeBuild/
+
 linux/
 ios/
 macos/
